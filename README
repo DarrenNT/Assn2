@@ -1,0 +1,20 @@
+-- WARNING: 
+	*The dictionary only breaks words at new lines, so non-letter characters & whitespace are 		 taken.
+	*There is a limit of 100 words.
+
+-- MAKING THE FILE:
+	* Change to the "Assignment2" directory using cd in the terminal
+	* Type make
+
+-- RUNNING THE FILE:
+	* in the "Assignment2" directory type ./Dictionary and then input your own text
+	* Alternately you may type "./Dictionary < test1" for a premade text input.
+
+-- TEXT SAMPLE:
+	* After making the file you may run test1 through the dictionary for:
+		-33 instances of the word "fish"
+		-17 instances of the word "speaker"
+		-25 instances of the word "plate"
+		-25 instances of the word "shelf"
+		-1 instance of the word "alphabet"
+	  Only alphabet will be ignored because it is the 101st word attempted.
