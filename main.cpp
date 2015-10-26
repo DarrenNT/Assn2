@@ -1,11 +1,19 @@
 #include "global.h"
 
+/****************************************************
+Author: Darren Tam
+Assignment #2
+Purpose: To let the user input up to 100 words 
+         and receive what words were put in and
+         at what frequency in alphabetic order.
+****************************************************/
+
 DICT dictionary;  //your dictionary 
 WORD word;        // 
 int count[MAX];   //tracks word frequencies
 int temp;         //used for a swap during the DumpDictionary function.
 int numWord;	  //the number of different words in the dictionary.
-int sumWord = 0; 	  //the total frequency used for word limit.
+int sumWord = 0;  //the total frequency used for word limit.
 
 int main (void) {
     int pos;
