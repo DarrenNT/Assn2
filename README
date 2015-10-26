@@ -1,5 +1,6 @@
 -- WARNING: 
-	*The dictionary only breaks words at new lines, so non-letter characters & whitespace are 		 taken.
+	*The dictionary only breaks words at new lines, 
+	 so non-letter characters & whitespace are taken.
 	*There is a limit of 100 words.
 
 -- MAKING THE FILE:
@@ -7,8 +8,10 @@
 	* Type make
 
 -- RUNNING THE FILE:
-	* in the "Assignment2" directory type ./Dictionary and then input your own text
-	* Alternately you may type "./Dictionary < test1" for a premade text input.
+	* in the "Assignment2" directory type ./Dictionary and 
+	  then input your own text
+	* Alternately you may type "./Dictionary < test1" 
+	  for a premade text input.
 
 -- TEXT SAMPLE:
 	* After making the file you may run test1 through the dictionary for:
