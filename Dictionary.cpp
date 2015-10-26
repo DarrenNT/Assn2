@@ -8,10 +8,13 @@ if(FullDictionary(dictionary) == true){
 	return false;
 }
 else{
+	// Checking if word is already inside
 	for(int i = 0; i < MAX; i++){
-		if(dict[i].compare(word) == 0){ //problem
+		if(dict[i].compare(word) == 0){
 			count[i]++;
 			break;
+
+	//otherwise add the word
 		}else{
 			if(dict[i].empty()){
 				dict[i] = word;
@@ -40,6 +43,7 @@ for(int i = 0; i < MAX; i++){
 	}
 }
 
+//Displaying the contents with formatting
 for(int i = 0; i < numWord; i++){
 	if(count[i] != 0){ 
 		printf("Word: %-12s Frequency: %-2i", dict[i].c_str(), count[i]);
@@ -50,6 +54,7 @@ for(int i = 0; i < numWord; i++){
 }
 
 WORD GetNextWord(void){
+	//Returns a word or if at the end of the buffer an empty string instead.
 	getline(cin, word);
 	if(word.length() == 0){
 		return "";
@@ -59,6 +64,8 @@ WORD GetNextWord(void){
 }
 
 BOOL FullDictionary(DICT dict){
+	//Calculates how many words are put into Dictionary
+	//to check if its at the limit of 100 words or not.
 	sumWord = 0;
 	for(int i = 0; i < numWord; i++){
 		sumWord = sumWord + count[i];
@@ -71,10 +78,10 @@ BOOL FullDictionary(DICT dict){
 }
 
 int LocateWord(DICT dict, WORD word){
+	//Compares word to the dictionary and returns the location if found
+	//Otherwise returns a negative number to indicate it was not found.
 	for(int i = 0; i < numWord; i++){
-		cout<< "you are in";
 		if( word.compare(dict[i]) == 0){
-			cout << " completely" << endl;
 			return i;		
 		}
 	}
